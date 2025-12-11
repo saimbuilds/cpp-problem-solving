@@ -45,35 +45,39 @@ void reverseArr(int arr[], int size){
     }
 }
 int main() {
-    // int arr[100];
-    // int size;
+
+
+
+   
     // cout<<"Enter size: ";
     // cin>>size;
     // for(int i =0;i<size;i++){
     //     cin>>arr[i];
     // }
-    
-    // for(int i =0;i<size;i++){
-    //     cout<<arr[i];
+    int arr[3][3] = {
+        {1, 2, 3},
+        {5, 6, 7},
+        {9, 10, 11}
+    };
+//    for(int i = 0;i<3;i++) cout<<arr[i][i]<<" ";
+//    cout << "\nSecondary Diagonal: ";
+//    for(int i =0;i<3;i++) cout<<arr[i][2-i]<<" ";
+    // for(int i =0;i<3;i++){
+    //     for(int j=0;j<3;j++){
+    //         if(i==j){
+    //             cout<<arr[i][j]<<" ";
+    //         }
+    //     }
     // }
-  
-    // int arr[10]= {1,2,3,4,5,6,7,8,9,10};
-    // modifyArr(arr, 10);
-    // cout<<arr[9];
+    // for(int i =0;i<3;i++){
+    //     for(int j=0;j<3;j++){
+    //         if((i+j)==3-1){
+    //             cout<<arr[i][j]<<" ";
+    //         }
+    //     }
+    // }
+    
 
-
-    int arr[10];
-    int size;
-    cout<<"Enter size: ";
-    cin>>size;
-    for(int i =0;i<size;i++){
-        cin>>arr[i];
-    }
-    cout<<"Before Reverse: "<<endl;
-    printArr(arr, size);
-    cout<<"\n After Reverse: "<<endl;
-    reverseArr(arr, size);
-    printArr(arr, size);
     
     return 0;
 
