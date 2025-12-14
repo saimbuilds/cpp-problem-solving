@@ -147,32 +147,11 @@ int removeDuplicateFromSortedArray(int arr[], int n){
     return i+1;
 
 }
+int abc(){
+    cout<<"Life is too short";
+}
 int main() {
-    // int arr[] = {3, 1, 4, 1, 5, 3, 3, 2, 1};
-    // int n = 9;  
-    // int freq[11] = {0};
-    // for(int i = 0; i < n; i++) {
-    //     cout << arr[i] << " ";
-    //     freq[arr[i]]++;  // Increment count for this value
-    // }
-    // cout << endl << endl;
-    // for(int i = 0; i <= 10; i++) {
-    //     if(freq[i] > 0) {
-    //         cout << i << " appears " << freq[i] << " time(s)" << endl;
-    //     }
-    // }
 
-    
-    // cout<<"Before rotation: ";
-    // printArray(arr, n);
-    // int k;
-    // cout<<"Enter the k: ";
-    // cin>>k;
-    // k=k%n;
-    // reverseArray(arr, n, 0, n-1);
-    // reverseArray(arr, n, 0, k-1);
-    // reverseArray(arr, n, k, n-1);
-    // printArray(arr, n);
     int arr[] = {1, 1, 2, 2, 3, 4, 4};
     int n = 7;
     cout<<"Before Duplication: ";
