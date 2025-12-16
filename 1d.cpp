@@ -29,7 +29,7 @@ void printMatrix(int matrix[][100], int rows, int cols) {
 //         int temp  = arr[left];
 //         arr[left] = arr[right];
 //         arr[right] = temp;
-//         left++;
+//g         left++;
 //         right--;
 //     }
 
