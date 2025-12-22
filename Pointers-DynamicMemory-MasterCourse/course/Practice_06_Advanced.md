@@ -95,7 +95,7 @@ int main() {
 
 ### Problem 6: Function with 2D Array
 ```cpp
-int** createMatrix(int r, int c) {
+int** func(int r, int c) {
     int** m = new int*[r];
     for (int i = 0; i < r; i++) {
         m[i] = new int[c];
@@ -107,7 +107,7 @@ int** createMatrix(int r, int c) {
 }
 
 int main() {
-    int** mat = createMatrix(3, 3);
+    int** mat = func(3, 3);
     cout << mat[0][2] << " " << mat[1][1] << " " << mat[2][0];
     
     for (int i = 0; i < 3; i++) delete[] mat[i];
@@ -166,19 +166,19 @@ delete[] arr;
 
 ### Problem 9: All Concepts Combined
 ```cpp
-int** create(int n) {
+int** process(int n) {
     int** arr = new int*[n];
     for (int i = 0; i < n; i++) {
         arr[i] = new int[n];
         for (int j = 0; j < n; j++) {
-            arr[i][j] = (i == j) ? 1 : 0;  // Identity matrix
+            arr[i][j] = (i == j) ? 1 : 0;
         }
     }
     return arr;
 }
 
 int main() {
-    int** mat = create(3);
+    int** mat = process(3);
     
     int sum = 0;
     for (int i = 0; i < 3; i++) {
@@ -200,7 +200,7 @@ int main() {
 
 ### Problem 10: The Ultimate Challenge
 ```cpp
-int* merge(int* a, int sa, int* b, int sb) {
+int* func(int* a, int sa, int* b, int sb) {
     int* result = new int[sa + sb];
     int i = 0, j = 0, k = 0;
     
@@ -222,13 +222,13 @@ int main() {
     int* arr1 = new int[3]{1, 5, 9};
     int* arr2 = new int[4]{2, 4, 6, 8};
     
-    int* merged = merge(arr1, 3, arr2, 4);
+    int* result = func(arr1, 3, arr2, 4);
     
-    cout << merged[0] << " " << merged[3] << " " << merged[6];
+    cout << result[0] << " " << result[3] << " " << result[6];
     
     delete[] arr1;
     delete[] arr2;
-    delete[] merged;
+    delete[] result;
     return 0;
 }
 ```

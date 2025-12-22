@@ -103,18 +103,18 @@ delete[] arr;
 
 ### Problem 7: Function Return
 ```cpp
-int* createArray(int size) {
-    int* arr = new int[size];
-    for (int i = 0; i < size; i++) {
-        arr[i] = i + 1;
+int* process(int n) {
+    int* data = new int[n];
+    for (int i = 0; i < n; i++) {
+        data[i] = i + 1;
     }
-    return arr;
+    return data;
 }
 
 int main() {
-    int* myArr = createArray(3);
-    cout << myArr[0] << " " << myArr[2];
-    delete[] myArr;
+    int* result = process(3);
+    cout << result[0] << " " << result[2];
+    delete[] result;
     return 0;
 }
 ```
@@ -158,15 +158,15 @@ delete[] newArr;
 
 ### Problem 10: FAST-Style Challenge
 ```cpp
-int* merge(int* a1, int s1, int* a2, int s2) {
-    int* result = new int[s1 + s2];
-    for (int i = 0; i < s1; i++) {
-        result[i] = a1[i];
+int* func(int* x, int a, int* y, int b) {
+    int* z = new int[a + b];
+    for (int i = 0; i < a; i++) {
+        z[i] = x[i];
     }
-    for (int i = 0; i < s2; i++) {
-        result[s1 + i] = a2[i];
+    for (int i = 0; i < b; i++) {
+        z[a + i] = y[i];
     }
-    return result;
+    return z;
 }
 
 int main() {
@@ -176,12 +176,12 @@ int main() {
     int* arr2 = new int[3];
     arr2[0] = 30; arr2[1] = 40; arr2[2] = 50;
     
-    int* merged = merge(arr1, 2, arr2, 3);
-    cout << merged[1] << " " << merged[3];
+    int* result = func(arr1, 2, arr2, 3);
+    cout << result[1] << " " << result[3];
     
     delete[] arr1;
     delete[] arr2;
-    delete[] merged;
+    delete[] result;
     return 0;
 }
 ```

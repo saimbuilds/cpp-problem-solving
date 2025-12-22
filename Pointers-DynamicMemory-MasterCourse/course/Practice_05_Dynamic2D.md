@@ -188,17 +188,17 @@ delete[] trans;
 
 ### Problem 8: Memory Leak Detection
 ```cpp
-void createMatrix() {
-    int** mat = new int*[3];
+void func() {
+    int** data = new int*[3];
     for (int i = 0; i < 3; i++) {
-        mat[i] = new int[4];
+        data[i] = new int[4];
     }
     // Forgot to delete!
 }
 
 int main() {
     for (int i = 0; i < 2; i++) {
-        createMatrix();
+        func();
     }
     return 0;
 }
@@ -225,19 +225,19 @@ delete[] arr;
 
 ### Problem 10: FAST-Style Complex
 ```cpp
-int** createAndFill(int r, int c) {
-    int** mat = new int*[r];
+int** process(int r, int c) {
+    int** data = new int*[r];
     for (int i = 0; i < r; i++) {
-        mat[i] = new int[c];
+        data[i] = new int[c];
         for (int j = 0; j < c; j++) {
-            mat[i][j] = i * c + j;
+            data[i][j] = i * c + j;
         }
     }
-    return mat;
+    return data;
 }
 
 int main() {
-    int** mat = createAndFill(3, 4);
+    int** mat = process(3, 4);
     
     cout << mat[0][3] << " ";
     cout << mat[1][2] << " ";
@@ -580,6 +580,8 @@ int** deepCopy(int** source, int rows, int cols) {
 
 **This is the exam killer topic - own it!**
 
----
+---1
 
 *🔥 2D Arrays conquered! Let's finish the advanced topics!*
+so this is how you can change the value in the code and this is how you change the code in the process and this is how ithana be hten most powrfulamn22222222
+and this is how you can change the code in the porcess life is changed abh
